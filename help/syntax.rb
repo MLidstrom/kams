@@ -1,8 +1,8 @@
 #Used to look up syntax for failed commands to tell the player.
 module Syntax
 
-	#Hash of command to syntax help that will be displayed.
-	Reference = {
+  #Hash of command to syntax help that will be displayed.
+  Reference = {
 "acarea" =>
 "ACAREA [NAME]",
 "acdoor" =>
@@ -57,7 +57,7 @@ AREACT [RELOAD|CLEAR] [OBJECT]",
 "astatus" =>
 "ASTATUS",
 "ateach" =>
-"ATEACH [OBJECT] [SKILL]", 
+"ATEACH [OBJECT] [SKILL]",
 "awho" =>
 "AWHO",
 "portal" =>
@@ -150,8 +150,8 @@ TYPO [SHOW|ADD|DEL] <id_number>",
 "WIELD [WEAPON] (RIGHT|LEFT)"
 }
 
-	#Returns the syntax for the given command or nil if it is not found.
-	def Syntax.find(command)
-		Reference[command]
-	end
+  #Returns the syntax for the given command or nil if it is not found.
+  def Syntax.find(command)
+    Reference[command]
+  end
 end
